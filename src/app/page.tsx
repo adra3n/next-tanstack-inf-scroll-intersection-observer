@@ -42,7 +42,7 @@ export default function Home() {
 
   useEffect(() => {
     if (inView && hasNextPage) {
-      console.log('Fire!')
+      console.log('triggered: last post index')
       fetchNextPage()
     }
   }, [inView, hasNextPage, fetchNextPage])
